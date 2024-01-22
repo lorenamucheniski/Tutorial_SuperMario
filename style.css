@@ -5,6 +5,7 @@ body {
 
 header {
     background-color: rgba(255, 0, 0, 0.89);
+    box-shadow: 1px 1px 1px;
 }
 
 header h1 {
@@ -13,10 +14,21 @@ header h1 {
     padding: .3em;
 }
 
+/*introdução logo após o header*/
 .primeiro_paragrafo {
     color: rgba(0, 0, 0, 0.808);
     text-align: center;
-    font-size: .8em;
+    font-size: 1em;
+    padding: .2em;
+}
+
+.data_hora {
+    font-size: .6em;
+    margin-left: .7em;
+}
+
+.p_autor {
+    font-size: .7rem;
 }
 
   
