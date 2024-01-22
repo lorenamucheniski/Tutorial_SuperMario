@@ -75,6 +75,8 @@ main p {
 
 hr {
     width: 90%;
+    height: 1px;
+    background-color: var(--azul);
 }
 
 .div_artigo h3 {

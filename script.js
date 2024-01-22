@@ -1,5 +1,5 @@
 const dataEHora = document.querySelector('.data_hora');
-const data = new Date('2024-01-22 14:49');
+const data = new Date('2024-01-22 16:35');
 
 function getDiaSemanaTexto(diaSemana) {
 
