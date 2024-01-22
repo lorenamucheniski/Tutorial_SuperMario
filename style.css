@@ -31,14 +31,26 @@ header h1 {
     font-size: .7rem;
 }
 
+.img_top {
+    width: 90%;
+    margin: 2em auto 0;
+}
+
+.img_top img{
+    width: 100%;
+}
   
-@media screen and (min-width: 600px){
+@media screen and (min-width: 500px){
     header h1 {
         font-size: 2em;
     }
 
     .primeiro_paragrafo {
         font-size: 1.2em;
+    }
+
+    .alterar_borda {
+        margin: 0 10em 0;
     }
 }
   
