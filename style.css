@@ -82,7 +82,7 @@ hr {
 .div_artigo h3 {
     margin-top: 1.5em;
     text-indent: var(--identacao);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;              /*propriedade adiciona borda no texto*/
     -webkit-text-stroke-color: var(--azul);
 
 }
@@ -94,7 +94,7 @@ hr {
 
 .imagens_tutorial img {
     border-radius: 10px;
-    border: 1px solid var(--azul);
+    border: 1px solid var(--vermelho);
     width: 100%;
 }
   
