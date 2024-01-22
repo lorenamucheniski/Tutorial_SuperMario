@@ -82,6 +82,9 @@ hr {
 .div_artigo h3 {
     margin-top: 1.5em;
     text-indent: var(--identacao);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--azul);
+
 }
 
 .imagens_tutorial {
