@@ -86,8 +86,8 @@ main p {
     }
 
     .img_top {
-        width: 100%;
-        height: 40em;
+        width: 60vw;
+        height: 80vh;
     }
 }
   
