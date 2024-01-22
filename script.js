@@ -1,5 +1,5 @@
 const dataEHora = document.querySelector('.data_hora');
-const data = new Date();
+const data = new Date('2024-01-22 13:44');
 
 function getDiaSemanaTexto(diaSemana) {
 
@@ -85,7 +85,7 @@ function criaData(data) {
     const nomeMes = getNomeMes(numeroMes);
 
     return (
-        `Última atualização ${nomeDia}, ${data.getDate()} de ${nomeMes}` +
+        `última atualização ${nomeDia}, ${data.getDate()} de ${nomeMes}` +
         ` de ${data.getFullYear()} ${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}`
     );
 }
