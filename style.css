@@ -5,6 +5,7 @@
     --vermelho: rgba(255, 0, 0, 0.8);
     --azul: rgb(45, 97, 240);
     --tamanho-padrao-letras: .9em;
+    --identacao: 1.2em;
 }
 
 body {
@@ -67,9 +68,29 @@ main {
 }
 
 main p {
-    text-indent: 1.2em;
+    text-indent: var(--identacao);
     text-align: justify;
     font-size: var(--tamanho-padrao-letras);
+}
+
+hr {
+    width: 90%;
+}
+
+.div_artigo h3 {
+    margin-top: 1.5em;
+    text-indent: var(--identacao);
+}
+
+.imagens_tutorial {
+    width: 90%;
+    margin: .5em auto 0;
+}
+
+.imagens_tutorial img {
+    border-radius: 10px;
+    border: 1px solid var(--azul);
+    width: 100%;
 }
   
 @media screen and (min-width: 500px){
@@ -88,6 +109,14 @@ main p {
     .img_top {
         width: 60vw;
         height: 80vh;
+    }
+
+    .imagens_tutorial {
+        width: 40%;
+    }
+
+    main p {
+        text-indent: 0;
     }
 }
   
