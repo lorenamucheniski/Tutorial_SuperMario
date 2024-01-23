@@ -105,16 +105,23 @@ hr {
     border: 1px solid var(--vermelho);
     width: 100%;
     box-shadow: 2px 3px 3px 1px;
-
 }
 
 .imagens_tutorial img:hover {
-
+    transform: scale(2, 2);
+    transition-duration: .6s;
 }
 
 .imagens_tutorial p {
     font-size: .8em;
-    text-align: center;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.icones {
+    font-size: 1.2em;
+    -webkit-text-stroke: 1px var(--vermelho);
+    color: transparent;
 }
   
 @media screen and (min-width: 500px){
@@ -144,6 +151,13 @@ hr {
     }
 
     .imagens_tutorial {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .imagens_tutorial img {
         width: 40%;
     }
 
