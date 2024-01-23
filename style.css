@@ -107,14 +107,10 @@ hr {
     box-shadow: 2px 3px 3px 1px;
 }
 
-.imagens_tutorial img:hover {
-    transform: scale(2, 2);
-    transition-duration: .6s;
-}
 
 .imagens_tutorial p {
     font-size: .8em;
-    text-align: left;
+    text-align: center;
     line-height: 1.5em;
 }
 
@@ -123,50 +119,58 @@ hr {
     -webkit-text-stroke: 1px var(--vermelho);
     color: transparent;
 }
-  
-@media screen and (min-width: 500px){
 
+@media screen and (min-width: 500px){
+    
     body {
         font-weight: 600;
     }
-
+    
     header h1 {
         font-size: 2em;
     }
-
+    
     .primeiro_paragrafo {
         font-size: 1.2em;
     }
-
+    
     .alterar_borda {
         margin: 0 10em 0;
         padding: 15px;
         border-left: 1px solid rgba(0, 0, 0, 0.4);
         border-right: 1px solid rgba(0, 0, 0, 0.4);
     }
-
+    
     .img_top {
         width: 60vw;
         height: 80vh;
     }
-
+    
     .imagens_tutorial {
         width: 90%;
         display: flex;
         align-items: center;
         gap: 2em;
     }
-
+    
     .imagens_tutorial img {
         width: 40%;
+    }
+    
+    .imagens_tutorial img:hover {
+        transform: scale(2, 2);
+        transition-duration: .6s;
+    }
+
+    .imagens_tutorial p {
+        text-align: left;
     }
 
     main p {
         text-indent: 0;
     }
-
+    
     .div_artigo {
         margin: 0 2em 0;
     }
 }
-  
