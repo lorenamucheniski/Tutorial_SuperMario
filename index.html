@@ -51,172 +51,130 @@
         <article class="artigo">
             <h3>Primeiros passos criando o jogo:</h3>
             <p>
-                Como padrão o Scratch vem com a linguagem em inglês. Utilizaremos a plataforma com a linguagem
-                padrão para poder ir nos habituando e conhecendo os comandos em inglês. Através de capturas de
-                tela irei mostrar o passo a passo para que você possa criar o seu jogo. Vamos começar?
+                Através de capturas de
+                tela irei mostrar o passo a passo para que você possa criar o seu jogo. Se você ainda não conhece
+                a plataforma do Scratch ou não tem familiaridade, comece por aqui primeiro, e só depois vá para o
+                código do jogo, combinado?! <br> Vamos começar!
             </p>
-            <div class="imagens_tutorial">
-                <p><i class="bi bi-circle-fill icones "></i> Apague o gatinho clicando sobre a lixeira no canto
-                    superior
-                    direito do ator.</p>
-                <img src="/assets/img/img1.png" alt="apagando o gatinho do jogo">
+            <div class="tutorial">
+                <p>1º: Apague o gatinho clicando sobre a lixeira no canto superior direito do ator e renomeie o arquivo
+                    o nosso arquivo para "Jogo_do_Mario" A barra para renomear o arquivo se
+                    na parte superior da página ao lado de Editar.</p>
 
-                <p><i class="bi bi-circle-fill icones"></i> Agora vamos renomear o nosso arquivo para
-                    "Jogo_do_Mario" A barra para renomear o arquivo se encontra na parte superior ao
-                    lado de "Edit".</p>
-                <img src="/assets/img/img2.png" alt="renomeando o arquivo">
-
-                <p><i class="bi bi-circle-fill icones"></i> Importe o gif do personagem para dentro do
-                    Scratch.
-                    Passe o cursor do mouse sobre o rostinho do gatinho e clique na seta "upload sprite" que
-                    significa "carregar ator".</p>
-                <img src="/assets/img/img3.png" alt="renomeando o arquivo">
-
-                <p><i class="bi bi-circle-fill icones"></i> Procure a pasta onde você salvou o gif do mario,
-                    no meu caso está
-                    em DATA(D:) na pasta Bliblioteca. Clique
-                    sobre o personagem e logo depois em 'Abrir' no canto inferior direito da página. O mário
-                    já irá aparecer no seu palco. </p>
-                <img src="/assets/img/img4.png" alt="renomeando o arquivo">
+                <p> 2º: Importe o gif do personagem para dentro do Scratch. Se você não sabe como fazer isso, clique
+                    aqui e aprenda sobre a plataforma Scratch primeiro.
+                    <br>Meu ator do Mário já está importado e disponível na minha lista de atores.
+                </p>
+                <img src="/assets/img/img1.png" alt="renomeando o arquivo">
             </div>
-
 
             <h3>Inserindo os blocos de movimento:</h3>
 
-            <div class="imagens_tutorial">
-                <p><i class="bi bi-circle-fill icones"></i> Na área de blocos Events(eventos), pegue o
-                    bloquinho
-                    when space key pressed(quando tecla espaço pressionada). No lugar de space, clique e escolha
-                    a opção right now(tecla direita). Agora em Motion(movimento) procure por change x by
-                    10(adicione
-                    10 a x). Pronto, o mário já irá andar para o lado direito. Para que ele faça o
-                    movimento
-                    para a esquerda, pegue os mesmos bloquinhos mas agr no lugar de when space key presed você
-                    irá colocar
-                    left arrow e no valor de 10 colocará -10.</p>
-                <img src="/assets/img/img5.png" alt="renomeando o arquivo">
+            <div class="tutorial">
+                <p> 3º: O bloco de código a seguir é para que o ator do Mário consiga se movimentar para a esquerda
+                    e para a direita. Lembrando que as cores dos bloquinhos são para ajudar a nos localizar na página:
+                    blocos de eventos são amarelos, blocos de controle laranja, sensores azul claro e por ai vai...
+                    Cada pecinha tem a cor correspondente ao seu bloco. </p>
+                <img src="/assets/img/img2.png" alt="renomeando o arquivo">
 
-                <p><i class="bi bi-circle-fill icones"></i> Agora na área de blocos Looks(fantasias), iremos
-                    pegar o bloquinho next costume(próxima fantasia) para assim dar a impressão de que o ator
-                    está
-                    dando passos no jogo. Coloque em baixo dos dois blocos já existentes de movimento para
-                    direita e para esquerda.</p>
-                <img src="/assets/img/img6.png" alt="renomeando o arquivo">
+                <p> 4º: Adicione ao código os blocos 'próxima fantasia' e 'aponte para a direção 90'. Mas para que o
+                    aponte para a direção funcione corretamente, clique na opção 'direção' que fica em baixo do palco
+                    e selecione as duas setinhas que estão juntas. Se esse processo não for feito, o seu ator irá andar
+                    de
+                    ponta cabeça. </p>
+                <div class="duas_imagens">
+                    <img src="/assets/img/img3.png" alt="">
+                    <img src="/assets/img/img4.png" alt="">
+                </div>
 
-                <p><i class="bi bi-circle-fill icones"></i> Novamente vamos para a área de Motion e agr
-                    pegaremos
-                    o bloquinho point in direction 90(aponte para a direção 90), para que o ator se vire ao
-                    caminhar para
-                    a direita e para a esquerda. Coloque abaixo de next costume e no movimento para a
-                    esquerda(left arrow) é nescessário
-                    que o 90 esteja negativo, ou seja, -90</p>
-                <img src="/assets/img/img7.png" alt="renomeando o arquivo">
+                <p> Diminua o tamanho do Mário para 30, assim ficará melhor para jogar. Feito isso vamos montar o
+                    cenário do jogo, que terá vários atores.
+                </p>
 
-                <p><i class="bi bi-circle-fill icones"></i> Para que o ator se movimente corretamente, em baixo do
-                    palco
-                    clique dentro de "Direction 90" e selecione as duas setinhas como na imagem. Deixe-as
-                    selecionadas.</p>
-                <img src="/assets/img/img8.png" alt="renomeando o arquivo">
+                <h3>Desenhando o Cenário:</h3>
 
-                <p><i class="bi bi-circle-fill icones"></i> Em "size", mude o tamanho do ator para 40. Basta
-                    apagar
-                    o 100 e substituir pelo 40.</p>
-                <img src="/assets/img/img9.png" alt="renomeando o arquivo">
-            </div>
+                <div class="tutorial">
+                    <p> 5º Clique para pintar o cenário. Assim que o editor do cenário abrir, converta para btmap e
+                        depois renomeie como 'principal'.</p>
+                    <img src="/assets/img/img5.png" alt="">
 
-            <h3>Desenhando o Cenário:</h3>
+                    <p> 6º: Selecione o balde de tinta e uma cor para reprensentar o céu em 'preencher'. Agora basta
+                        clicar
+                        na tela em branco para pintar o cenário. </p>
+                    <img src="/assets/img/img6.png" alt="">
 
-            <div class="imagens_tutorial">
-                <p><i class="bi bi-circle-fill icones"></i> No ícone de cenário, clique em "paint" para começar a
-                    pintar.</p>
-                <img src="/assets/img/img10.png" alt="renomeando o arquivo">
+                    <p> 7º: Importe a nuvem para a nossa lista de atores para que possamos adicioná-la ao nosso cenário
+                        e
+                        deixá-lo mais bonito. Após importa-la, vamos diminuir o seu tamanho. Selecione a setinha nas
+                        ferramentas, clique com o mouse no canto superior esquerdo, segure
+                        e arraste sobre todo o desenho até que a nuvem toda esta selecionada.</p>
+                    <img src="/assets/img/img7.png" alt="">
 
-                <p><i class="bi bi-circle-fill icones"></i> Primeiramente converta para btmap, depois selecione o
-                    balde de tinta e escolha um azul claro no seletor de cores. Após esses passos, basta das um
-                    clique dentro
-                    do campo do cenário. No palco já mostrará a cor que nós escolhemos.</p>
-                <img src="/assets/img/img11.png" alt="renomeando o arquivo">
+                    <p> 8º: Diminua o seu tamanho utilizando as bolinhas laterais até o
+                        tamanho desejado. Para copiar clique na opção de 'copiar' e depois 'colar'.
+                        Reposicione a nova nuvem no cenário.
+                        Aqui eu fiz 5 cópias para que o cenário não fique tão poluido. </p>
+                    <img src="/assets/img/img8.png" alt="renomeando o arquivo">
 
-                <p><i class="bi bi-circle-fill icones"></i> Agora vamos carregar a nuvem como ator, para que ela faça
-                    parte do
-                    nosso cenário.
-                    O passo a passo é o mesmo de quando importamos o mário: passe o cursor do mouse sobre o rostinho do
-                    gatinho e clique na seta "upload sprite".
-                    Agora vamos selecionar a nuvem e em seguida clicar em 'abrir', e ela já aparecerá na lista de
-                    atores. </p>
-                <img src="/assets/img/img12.png" alt="renomeando o arquivo">
+                    <p>Agora o palco se encontra desta maneira: </p>
+                    <img src="assets/img/img9.png" alt="">
 
-                <p><i class="bi bi-circle-fill icones"></i> Vamos replicar a nuvem agora para ficar várias nuvens no
-                    nosso cenário.
-                    Clique na setinha como na imagem, selecione todo o desenho: segure o cursor do mouse e arraste sobre
-                    o desenho. </p>
-                <img src="/assets/img/img13.png" alt="renomeando o arquivo">
+                    <p> 9º: Vamos adicionar os bloquinhos para fazer o chão. Importe-o
+                        nos atores assim como fizemos com a nuvem e já diminua o seu tamanho. Copie e cole vários
+                        bloquinhos um ao lado do outro até você obter esse resultado: </p>
+                    <img src="assets/img/img10.png" alt="">
+                    <p>Por enquanto vamos deixar o cenário assim, mas daqui a pouco adicionaremos mais atores ao jogo.</p>
+                </div>
+                <h3>Continuando os movimentos do Mário</h3>
 
-                <p><i class="bi bi-circle-fill icones"></i> Diminua o tamanho na nuvem pelas bolinhas laterais até o
-                    tamanho desejado.
-                    Agora para copiar clique na opção de 'copy' e depois 'paste' (copiar e colar). Reposicione a nova
-                    nuvem no cenário.
-                    Aqui eu fiz 5 cópias para que o cenário não fique tão poluido. </p>
-                <img src="/assets/img/img14.png" alt="renomeando o arquivo">
+                <div class="tutorial">
+                    <p> Os próximos blocos de código é para que o mário sempre ande
+                        sobre os blocos. Primeiro, posicione o Mário em cima dos bloquinhos e veja o valor de y abaixo
+                        do
+                        palco:</p>
+                    <img src="/assets/img/img17.png" alt="renomeando o arquivo">
 
-                <p>Agora o palco se encontra desta maneira: </p>
-                <img src="assets/img/img15.png" alt="">
+                    <p> Utilizaremos o valor de y no nosso código. Pegue os blocos
+                        de código nessa
+                        seqência: 'when flag clicked' (quando a bandeira for clicada), 'foreve' (sempre), 'if then' (se
+                        então), 'touching mouser-point' (tocando em ponteiro do mouse), 'set y to' (mude y para). No
+                        lugar
+                        de 'mouser-point' coloque 'bloco', que é referente aos bloquinhos do chão. Confira se o valor
+                        que
+                        esta em 'set y to' é o mesmo do y que se encontra em baixo do palco.</p>
+                    <img src="/assets/img/img18.png" alt="renomeando o arquivo">
+                    <p>Agora o Mário está andando sobre os bloquinhos.</p>
 
-                <p><i class="bi bi-circle-fill icones"></i> Vamos adicionar os bloquinhos para fazer o chão. Importe-o
-                    nos atores assim como fizemos com a nuvem e já dimnua o seu tamanho. Copie e cole varios bloquinhos
-                    um ao lado do outro
-                    até você obter esse resultado: </p>
+                    <p> O próximo bloco de código é para fazer com que o ator pule.
+                    </p>
+                    <img src="/assets/img/img12.png" alt="renomeando o arquivo">
 
-                <img src="assets/img/img16.png" alt="">
-            </div>
-            <h3>Continuando os movimentos do Mário</h3>
+                    <p> Vamos replicar a nuvem agora para ficar várias nuvens no
+                        nosso cenário.
+                        Clique na setinha como na imagem, selecione todo o desenho: segure o cursor do mouse e arraste
+                        sobre
+                        o desenho. </p>
+                    <img src="/assets/img/img13.png" alt="renomeando o arquivo">
 
-            <div class="imagens_tutorial">
-                <p><i class="bi bi-circle-fill icones"></i> Os próximos blocos de código é para que o mário sempre ande
-                    sobre os blocos. Primeiro, posicione o Mário em cima dos bloquinhos e veja o valor de y abaixo do
-                    palco:</p>
-                <img src="/assets/img/img17.png" alt="renomeando o arquivo">
+                    <p> Diminua o tamanho na nuvem pelas bolinhas laterais até o
+                        tamanho desejado.
+                        Agora para copiar clique na opção de 'copy' e depois 'paste' (copiar e colar). Reposicione a
+                        nova
+                        nuvem no cenário.
+                        Aqui eu fiz 5 cópias para que o cenário não fique tão poluido. </p>
+                    <img src="/assets/img/img14.png" alt="renomeando o arquivo">
 
-                <p><i class="bi bi-circle-fill icones"></i> Utilizaremos o valor de y no nosso código. Pegue os blocos
-                    de código nessa
-                    seqência: 'when flag clicked' (quando a bandeira for clicada), 'foreve' (sempre), 'if then' (se
-                    então), 'touching mouser-point' (tocando em ponteiro do mouse), 'set y to' (mude y para). No lugar
-                    de 'mouser-point' coloque 'bloco', que é referente aos bloquinhos do chão. Confira se o valor que
-                    esta em 'set y to' é o mesmo do y que se encontra em baixo do palco.</p>
-                <img src="/assets/img/img18.png" alt="renomeando o arquivo">
+                    <p>Agora o palco se encontra desta maneira: </p>
+                    <img src="assets/img/img15.png" alt="">
 
-                <p><i class="bi bi-circle-fill icones"></i> Agora vamos carregar a nuvem como ator, para que ela faça
-                    parte do
-                    nosso cenário.
-                    O passo a passo é o mesmo de quando importamos o mário: passe o cursor do mouse sobre o rostinho do
-                    gatinho e clique na seta "upload sprite".
-                    Agora vamos selecionar a nuvem e em seguida clicar em 'abrir', e ela já aparecerá na lista de
-                    atores. </p>
-                <img src="/assets/img/img12.png" alt="renomeando o arquivo">
+                    <p> Vamos adicionar os bloquinhos para fazer o chão. Importe-o
+                        nos atores assim como fizemos com a nuvem e já dimnua o seu tamanho. Copie e cole varios
+                        bloquinhos
+                        um ao lado do outro
+                        até você obter esse resultado: </p>
 
-                <p><i class="bi bi-circle-fill icones"></i> Vamos replicar a nuvem agora para ficar várias nuvens no
-                    nosso cenário.
-                    Clique na setinha como na imagem, selecione todo o desenho: segure o cursor do mouse e arraste sobre
-                    o desenho. </p>
-                <img src="/assets/img/img13.png" alt="renomeando o arquivo">
-
-                <p><i class="bi bi-circle-fill icones"></i> Diminua o tamanho na nuvem pelas bolinhas laterais até o
-                    tamanho desejado.
-                    Agora para copiar clique na opção de 'copy' e depois 'paste' (copiar e colar). Reposicione a nova
-                    nuvem no cenário.
-                    Aqui eu fiz 5 cópias para que o cenário não fique tão poluido. </p>
-                <img src="/assets/img/img14.png" alt="renomeando o arquivo">
-
-                <p>Agora o palco se encontra desta maneira: </p>
-                <img src="assets/img/img15.png" alt="">
-
-                <p><i class="bi bi-circle-fill icones"></i> Vamos adicionar os bloquinhos para fazer o chão. Importe-o
-                    nos atores assim como fizemos com a nuvem e já dimnua o seu tamanho. Copie e cole varios bloquinhos
-                    um ao lado do outro
-                    até você obter esse resultado: </p>
-
-                <img src="assets/img/img16.png" alt="">
-            </div>
+                    <img src="assets/img/img16.png" alt="">
+                </div>
 
 
         </article>
