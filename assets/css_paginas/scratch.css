@@ -31,3 +31,29 @@ header {
     padding: .2em;
     margin-top: 1em;
 }
+
+.img_top {
+    width: 100%;
+    margin: 2em auto 0;
+    background-color: white;
+    
+}
+
+.img_top img {
+    position: relative;
+    animation: moverImagem 4s linear infinite;
+}
+
+@keyframes moverImagem {
+    0% {
+        transform: translateX(0);
+    }
+
+   50% {
+transform: translateX(240px);
+   } 
+
+   100% {
+    transform: translateX(0);
+   }
+}

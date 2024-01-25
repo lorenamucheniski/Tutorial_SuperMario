@@ -34,7 +34,8 @@ nav {
 
 nav ul {
     list-style: none;
-    font-size: .5em;
+    font-size: .7em;
+    padding: 4px;
 }
 
 li a {
