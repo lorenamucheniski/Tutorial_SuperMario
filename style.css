@@ -48,11 +48,12 @@ li a {
     text-align: center;
     font-size: 1em;
     padding: .2em;
+    margin-top: 1em;
 }
 
 .data_hora {
     font-size: .6em;
-    margin: 1em 0 0 1.5em;
+    margin: 2em 0 0 1.5em;
 }
 
 .p_autor {
@@ -92,25 +93,24 @@ main p {
 }
 
 .artigo {
-    margin: 20px auto 0;
+    margin: 0 auto 0;
 }
  .artigo p {
-    margin: 20px auto 0;
+    margin: 5px auto 0;
  }
 
 .artigo h3 {
     text-align: center;
     color: white;
     background-color: var(--azul);
-    padding: 5px;
     border-radius: 0 15px 0;
-    margin-top: 2em;
+    margin: 2em auto 0;
+    padding: 3px;
 }
 
 .tutorial {
-    width: 80%;
-    margin: 0 auto 0;
-    padding: 2em;
+    width: 90%;
+    margin: 1em auto 0;
 }
 
 .tutorial p {
@@ -123,9 +123,9 @@ main p {
 .tutorial img {
     border-radius: 10px;
     border: 1px solid var(--vermelho);
-    width: 100%;
+    width: 85%;
     box-shadow: 2px 3px 3px 1px;
-    margin-bottom: 1.5em ;
+    margin-bottom: 1em;
 }
 
 
@@ -147,12 +147,6 @@ main p {
         text-align: center;
         margin-top: 1em;
     }
-
-    .alterar_borda {
-        padding: 15px;
-        border-left: 1px solid rgba(0, 0, 0, 0.4);
-        border-right: 1px solid rgba(0, 0, 0, 0.4);
-    }
     
     .img_top {
         width: 60%;
@@ -160,12 +154,15 @@ main p {
     }
     
     .tutorial {
-        width: 90%;
+        width: 80%;
         gap: 3em;
+        border-left: 1px solid rgba(0, 0, 0, 0.4);
+        border-right: 1px solid rgba(0, 0, 0, 0.4);
+        padding: 0 3em 0;
     }
     
     .tutorial img {
-        width: 40%;
+        width: 50%;
     }
     
     .tutorial img:hover {
@@ -175,10 +172,6 @@ main p {
 
     .tutorial p {
         text-align: left;
-    }
-
-    main {
-        padding: 0 15em 0;
     }
 
     main p {
@@ -194,5 +187,27 @@ main p {
         margin: auto;
     }
     
+    
+}
+
+ @media screen and (min-width: 600px) {
+    main {
+        padding: 0 5em 0;
+    }
+    
+    .tutorial img {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        padding: 0 15em 0;
+    }
+
+    .img_top {
+        width: 40%;
+    }
     
 }
