@@ -197,7 +197,16 @@ main p {
     }
     
     .tutorial img {
-        width: 50%;
+        width: 40%;
+    }
+
+    .duas_imagens {
+        display: flex;
+    }
+    
+    .duas_imagens img {
+        align-self: flex-end;
+        margin: auto;
     }
 
 }
@@ -209,6 +218,10 @@ main p {
 
     .img_top {
         width: 40%;
+    }
+
+    .tutorial img {
+        width: 30%;
     }
     
 }
