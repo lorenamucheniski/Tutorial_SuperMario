@@ -129,6 +129,33 @@ main p {
     margin-bottom: 1em;
 }
 
+footer {
+    background-color: rgba(241, 241, 241, 0.5);
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: 2em;
+}
+
+footer ul li {
+    box-shadow: 0 15px 15px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 3px ;
+}
+
+footer .icones_redes {
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--azul);
+}
+
 
 @media screen and (min-width: 500px){
     
@@ -160,6 +187,7 @@ main p {
         border-left: 1px solid rgba(0, 0, 0, 0.4);
         border-right: 1px solid rgba(0, 0, 0, 0.4);
         padding: 0 3em 0;
+        text-align: center;
     }
     
     .tutorial img {
@@ -206,7 +234,11 @@ main p {
     
     .duas_imagens img {
         align-self: flex-end;
-        margin: auto;
+        margin: 0 auto 0;
+    }
+
+    .tutorial p {
+        margin-top: 2em;
     }
 
 }
@@ -220,8 +252,16 @@ main p {
         width: 40%;
     }
 
-    .tutorial img {
-        width: 30%;
+    .tutorial {
     }
+
+    .tutorial img {
+        width: 20%;
+    }
+
+    .tutorial p {
+        max-width: 60em;
+    }
+
     
 }
