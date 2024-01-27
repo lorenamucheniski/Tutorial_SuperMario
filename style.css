@@ -148,6 +148,7 @@ footer ul {
 footer ul li {
     box-shadow: 0 15px 15px 1px rgba(0, 0, 0, 0.2);
     padding: 0 3px ;
+    border-radius: 3px;
 }
 
 footer .icones_redes {
@@ -250,9 +251,6 @@ footer .icones_redes {
 
     .img_top {
         width: 40%;
-    }
-
-    .tutorial {
     }
 
     .tutorial img {

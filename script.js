@@ -1,93 +1,23 @@
 const dataEHora = document.querySelector('.data_hora');
-const data = new Date('2024-01-26 12:13');
 
-function getDiaSemanaTexto(diaSemana) {
+function mostrarHora(hora_atual) {
 
-    let diaSemanaTexto;
+    let hora = new Date();
 
-    switch (diaSemana) {
-        case 0:
-            diaSemanaTexto = 'Domingo';
-            return diaSemanaTexto;
-        case 1:
-            diaSemanaTexto = 'Segunda-feira';
-            return diaSemanaTexto;
-        case 2:
-            diaSemanaTexto = 'Terça-feira';
-            return diaSemanaTexto;
-        case 3:
-            diaSemanaTexto = 'Quarta-feira';
-            return diaSemanaTexto;
-        case 4:
-            diaSemanaTexto = 'Quinta-feira';
-            return diaSemanaTexto;
-        case 5: diaSemanaTexto = 'Sexta-feira';
-            return diaSemanaTexto;
-        case 6:
-            diaSemanaTexto = 'Sábado';
-            return diaSemanaTexto;
+    hora_atual = hora.toLocaleTimeString('pt-BR', {
+        hour12: false
+    });
 
-    }
+    return ` às ${hora_atual}`;
+
 }
 
-function getNomeMes(numeroMes) {
+function mostrarData() {
+    let data = new Date();
 
-    let nomeMes;
+    data_atual = data.toLocaleDateString('pt-BR')
 
-    switch (numeroMes) {
-        case 0:
-            nomeMes = 'Janeiro';
-            return nomeMes;
-        case 1:
-            nomeMes = 'Fevereiro';
-            return nomeMes;
-        case 2:
-            nomeMes = 'Março';
-            return nomeMes;
-        case 3:
-            nomeMes = 'Abril';
-            return nomeMes;
-        case 4:
-            nomeMes = 'Maio';
-            return nomeMes;
-        case 5: nomeMes = 'Junho';
-            return nomeMes;
-        case 6:
-            nomeMes = 'Julho';
-            return nomeMes;
-        case 7:
-            nomeMes = 'Agosto';
-            return nomeMes;
-        case 8:
-            nomeMes = 'Setembro';
-            return nomeMes;
-        case 9:
-            nomeMes = 'Outubro';
-            return nomeMes;
-        case 10:
-            nomeMes = 'Novembro';
-            return nomeMes;
-        case 11:
-            nomeMes = 'Dezembro';
-            return nomeMes;
-    }
+    return `Última atualização ${data_atual}`
 }
 
-function zeroAEsquerda (numero) {
-    return numero >= 10 ? numero : `0${numero}`
-}
-
-function criaData(data) {
-    const diaSemana = data.getDay();
-    const numeroMes = data.getMonth();
-
-    const nomeDia = getDiaSemanaTexto(diaSemana);
-    const nomeMes = getNomeMes(numeroMes);
-
-    return (
-        `última atualização ${nomeDia}, ${data.getDate()} de ${nomeMes}` +
-        ` de ${data.getFullYear()} ${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}`
-    );
-}
-
-dataEHora.innerHTML += criaData(data);
+dataEHora.innerHTML += mostrarData() + mostrarHora()
