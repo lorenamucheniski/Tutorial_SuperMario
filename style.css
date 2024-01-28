@@ -30,6 +30,7 @@ header {
 nav {
     background-color: rgba(0, 0, 0, 0.6);
     padding: .4em;
+    height: 2em;
 }
 
 nav ul {
@@ -131,7 +132,7 @@ main p {
 
 footer {
     background-color: rgba(241, 241, 241, 0.5);
-    height: 3em;
+    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +142,7 @@ footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 1.5em;
     font-size: 2em;
 }
 
@@ -259,6 +260,12 @@ footer .icones_redes {
 
     .tutorial p {
         max-width: 60em;
+    }
+
+    nav {
+        max-width: 50em;
+        margin: 0 auto;
+        border-radius: 0 0 5px 5px;
     }
 
     
