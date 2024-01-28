@@ -94,6 +94,52 @@ main p {
   font-size: var(--tamanho-padrao-letras);
 }
 
+.links_top a {
+  font-size: .8em;
+  text-decoration: none;
+  color: white;
+
+}
+
+.links_top {
+  position: relative;
+  width: 15em;
+  height: 1.5em;
+  margin: 2em auto;
+  padding: 1em;
+  display: flex;
+  gap: 1.6em;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(12, 12, 235);
+  border-radius: 3px;
+}
+
+.links_top::before, .links_top::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, orange, rgb(207, 109, 29), rgb(177, 174, 11), rgb(235, 231, 11));
+    z-index: -1;
+    background-size: 300%;
+    border-radius: 5px;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+.links_top::after {
+  filter: blur(5px);
+}
+
+@keyframes AnimarBorda {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
 .artigo {
   margin: 0 auto 0;
 }
@@ -128,6 +174,12 @@ main p {
   width: 85%;
   box-shadow: 2px 3px 3px 1px;
   margin-bottom: 1em;
+}
+
+.ferramentas_topo {
+  list-style:decimal;
+  font-size: .8em;
+  text-align: left;
 }
 
 footer {
@@ -255,7 +307,7 @@ footer .icones_redes {
   }
 
   .tutorial img {
-      width: 20%;
+      width: 65%;
   }
 
   .tutorial p {
@@ -266,6 +318,12 @@ footer .icones_redes {
       max-width: 50em;
       margin: 0 auto;
       border-radius: 0 0 5px 5px;
+  }
+
+  .links_top {
+    width: 30em;
+    gap: 10em;
+    margin: 2.5em auto;
   }
 
   
