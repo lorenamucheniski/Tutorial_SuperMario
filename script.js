@@ -1,23 +1,9 @@
-const dataEHora = document.querySelector('.data_hora');
+const imagem = document.querySelector('.img_tela_cheia');
 
-function mostrarHora(hora_atual) {
+imagem.addEventListener('click', function(){
+    this.classList.toggle('tela_cheia');
+});
 
-    let hora = new Date();
-
-    hora_atual = hora.toLocaleTimeString('pt-BR', {
-        hour12: false
-    });
-
-    return ` às ${hora_atual}`;
-
+function adicionarClasseNosElementos (){
+    let elementos = document.querySelector('*');
 }
-
-function mostrarData() {
-    let data = new Date();
-
-    data_atual = data.toLocaleDateString('pt-BR')
-
-    return `Última atualização ${data_atual}`
-}
-
-dataEHora.innerHTML += mostrarData() + mostrarHora()

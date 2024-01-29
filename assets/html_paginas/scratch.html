@@ -12,21 +12,12 @@
 
 <body>
     <header>
-        Guia do Scratch
+        <h1>Guia do Scratch</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="assets/html_paginas/scratch.html" target="_blank">Conheça a plataforma Scratch</a></li>
-        </ul>
-    </nav>
     <div class="primeiro_paragrafo">
         <p>Aprenda como a plataforma funciona e comece a criar seus jogos.</p>
+        <p class="autor">Por Lorena Mucheniski</p>
     </div>
-
-    <div class="data_hora">
-        <p class="p_autor">Por Lorena Mucheniski</p>
-    </div>
-
 
     <div class="img_top">
         <img src="/assets/img_pagina2/img_top.png" alt="">
@@ -54,12 +45,12 @@
 
 
         <article class="artigo">
-            <h3>Página principal do Scratch:</h3>
+            <h3>Conhecendo o Scratch</h3>
             <div class="tutorial">
                 <p>Apresentando todas as ferramentas da página principal da plataforma: </p>
                 <img src="/assets/img_pagina2/img1.png" class="tela_cheia" alt="">
                 <p>No topo da página se encontram as seguintes ferramentas:</p>
-                <ul class="ferramentas_topo">
+                <ul class="ferramentas_scratch">
                     <li>
                         Configurações: você pode configurar o idioma da página e as cores a serem exibidas.
                     </li>
@@ -76,8 +67,82 @@
                         Renomear: logo ao lado de 'editar' podemos renomear o nosso arquivo, basta apagar o nome padrão
                         que a página trás e colocar o seu.
                     </li>
+                    <li>
+                        Compartilhar: o botão de compartilhar é para que seu jogo fique disponível para a comunidade do
+                        scratch. Nessa aba de compartilhamento também é possível gerar o link do seu jogo para
+                        enviar para seus amigos e família.
+                    </li>
+                    <li>
+                        Veja a página do projeto: te levará para a mesma página do 'compartilhar'.
+                    </li>
+                    <li>
+                        Tutorial: te mostrará alguns passo a passo como por exemplo criar uma história, fazer algo voar,
+                        fazer um jogo de clicar e por ai vai.
+                    </li>
+                    <li>
+                        Ícone pasta: esse ícone te levará a página onde estarão todos os seus projetos.
+                    </li>
+                    <li>
+                        Seu usuário: por último nas configurações de usuário é possível ver tudo sobre seu perfil,
+                        criações, email, senha, localização ou sair da plataforma do Scratch.
+                    </li>
                 </ul>
 
+                <p>Do lado esquerdo se encontram os blocos de códigos:</p>
+                <div class="duas_imagens">
+                    <img src="/assets/img_pagina2/img2.png" alt="">
+                    <img src="/assets/img_pagina2/img3.png" alt="">
+                    <img src="/assets/img_pagina2/img4.png" alt="">
+                </div>
+
+                <ul class="ferramentas_scratch">
+                    <li>
+                        Cada bloco de código possui uma cor. Repare que o bloco 'movimento' possui a cor azul mais
+                        escuro e as pecinhas deste bloco correspondem a essa cor. Em seguida temos o bloco aparência com
+                        a cor roxa, bloco som com a cor rosa e
+                        assim por diante.
+                    </li>
+                    <li>
+                        Temos blocos relacionados ao movimento, aparência, som, eventos, controle, sensores, operadores,
+                        variáveis e meus blocos.
+                    </li>
+                    <li>
+                        Além da separação por cores, os blocos de código do scratch imitam um quebra cabeça, onde os
+                        formatos das peças se encaixam ou não: se você não conseguir encaixa-la no seu código então
+                        significa que o bloco que está manipulando é o errado. Por exemplo:
+                        <div>
+                            <img src="/assets/img_pagina2/img.png" alt="">
+                        </div>
+                        Repare que a figura geométrica no meio da palavra 'se então' não corresponde ao formato do
+                        bloquinho que se encontra acima dele, já a segunda figura possui o mesmo formato. Sendo assim, o
+                        único código que funcionará será o da figura 2.
+                    </li>
+                    <li>
+                        Todo o nosso código será colocado na área de script, que é o espaço em branco no meio da tela.
+                        <div>
+                            <img src="/assets/img_pagina2/img6.png" alt="">
+                        </div>
+                        Aqui é um pequeno exemplo de um código para que o ator se movimenta para a direita. Na área de
+                        script temos as ferramentas de zoom, centralizar e também é possível movimentar o código dentro
+                        dessa área, basta clicar com o mouse em alguma área em branco e movimentar a tela.
+                    </li>
+                    <li>
+                        Ao lado da aba de código temos a aba de fantasias dos nossos atores. Nesta aba é possível editar
+                        o desenho dos atores, mudar o nome, as cores, apagar algum detalhe, adicionar, duplicar,
+                        realizar inúmeras alterações no seu ator, basta utilizar a imaginação.
+                        <div>
+                            <img src="/assets/img_pagina2/img7.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        A aba se sons onde é possível adicionar sons do próprio scratch ou gravar algum som e enviá-lo
+                        para a plataforma. Você também pode edita-los para que fique mais rápido, lento, mais alto ou
+                        baixo.
+                        <div>
+                            <img src="/assets/img_pagina2/img8.png" alt="">
+                        </div>
+                    </li>
+                </ul>
             </div>
 
             <h3>Inserindo os blocos de movimento:</h3>
@@ -138,120 +203,6 @@
                 <img src="assets/img/img10.png" alt="">
                 <p>Por enquanto vamos deixar o cenário assim, mas daqui a pouco adicionaremos mais atores ao jogo.
                 </p>
-            </div>
-
-            <h3>Continuando os movimentos do Mário</h3>
-
-            <div class="tutorial">
-                <p> 10º: O próximo código é para que o mário sempre ande
-                    sobre os blocos. Primeiro, posicione o Mário em cima dos bloquinhos e veja o valor de y abaixo
-                    do palco:</p>
-                <img src="/assets/img/img11.png" alt="">
-                <p>Adicione o código logo abaixo do bloco "se seta para esquerda pressionada", como mostra a imagem.
-                    Confira se o valor de y de dentro do código é o mesmo que o abaixo do palco. Feito isso o mário
-                    já estará andando somente sobre o chão do nosso cenário.
-                </p>
-                <img src="assets/img/img12.png" alt="">
-
-                <p> 11º: O próximo bloco de código será inserido logo abaixo de 'quando a bandeira for clicada'.
-                    Esse bloco definirá o ponto inicial do ator assim que o jogo começar. Posicione o ator
-                    primeiro e
-                    somente depois insira o bloco ao código.
-                </p>
-                <img src="/assets/img/img13.png" alt="">
-
-                <h3>Fazendo o ator pular</h3>
-
-                <p> 12º: Para que o ator pule é preciso criar uma variável e um bloco. Em 'variáveis', clique em
-                    'criar
-                    uma váriavel' e dê o nome de pulo. Crie essa variável para todos os atores.
-                    <br> Em seguida vá em 'meus blocos' e clique 'criar um bloco' e de o nome de 'gravidade'
-                </p>
-                <div class="duas_imagens">
-                    <img src="/assets/img/img14.png" alt="">
-                    <img src="/assets/img/img15.png" alt="">
-                </div>
-
-                <p> 13º: Adicione o seguinte código ao ator conforme mostra a imagem para que o mesmo pule sobre os
-                    obstáculos: </p>
-                <img src="/assets/img/img16.png" alt="">
-                <p>Agora clique na bandeira e teste até aqui o seu código, o Mário já deve estar andando e pulando.
-                </p>
-
-                <h3>Adicionando outros atores</h3>
-
-                <p> 14º: Vamos adicionar os outros atores que faltam ao nosso cenário para completar o jogo.
-                    Importe para o Scratch o gif da moeda, do bloco de moeda, do goomba e mais uma vez o mesmo que
-                    utilizamos para fazer o chão.
-                    <br>E nossa lista de atores se encontra assim:
-                </p>
-                <img src="/assets/img/img17.png" alt="">
-
-                <p>15º: Diminua o tamanho de todos os atores para que fiquem em um tamanho adequado no palco:</p>
-                <img src="assets/img/img18.png" alt="">
-
-                <p> 16: Duplique o ator do 'bloco 2' e posicione todos os atores dentro do palco conforme exemplo
-                    abaixo: </p>
-                <img src="assets/img/img19.png" alt="">
-
-                <h3>Comandos nos demais atores</h3>
-                <p>Os próximos blocos de códigos devem ser colocados em todos os atores pois definiremos
-                    a posição inicial onde cada um iniciará o jogo. Lembrando que você precisa primeiro organiza-los na
-                    tela
-                    e somente depois colocar o código.</p>
-                <img src="assets/img/img20.png" alt="">
-                <p>17º: Agora iremos realizar o comando no ator do Goomba para que ele ande para a direita
-                    e esquerda.
-                </p>
-                <img src="assets/img/img21.png" alt="">
-                <p>Pegaremos o comando 'deslize por 1 segs até x: y:' e só iremos adicionar o sinal de - (menos) no
-                    primeiro
-                    bloquinho e no eixo x. Os valores devem estar o mesmo do ponto inicial do ator no jogo, por exemplo,
-                    se o seu ator irá iniciar o jogo com as coordenadas x: -170 y: -110 os bloquinhos de dentro do
-                    sempre precisam estar com as mesmas coordenadas, somente adicione o sinal de - (menos) no eixo x do
-                    primeiro bloquinho. <br> Feito isso o Goomba já estará andando para a direita e para a esquerda.
-                </p>
-
-                <p>18º: Agora criaremos outra fantasia do Goomba para que ele fique achatado quando o mário pular sobre
-                    ele. <br> Vá em fantasias, duplique a primeira fantasia, selecione o ator e diminua seu tamanho na
-                    vertical para que ele fique como na imagem abaixo: </p>
-                <img src="/assets/img/img22.png" alt="">
-
-                <p>19: O próximo bloco de código é para que ele mude de fantasia assim que for atingido pelo mário:</p>
-                <img src="assets/img/img23.png" alt="">
-                <p>Dentro do 'tocando na cor' você irá selecionar a cor da bota do mário.</p>
-
-                <p>20º: Agora posicione o Mário sobre os bloquinhos flutuantes e veja o valor de y que mudará em baixo
-                    do
-                    palco, usaremos esse valor no próximo código: </p>
-                <img src="assets/img/img24.png" alt="">
-                <p>O código a seguir deve ser inserido no ator do Mário, para que ele fique sobre os bloquinhos
-                    flutuantes assim que pular sobre ele:</p>
-                <img src="assets/img/img25.png" alt="">
-
-                <p>21º: Faça uma linha vermelha em baixo de cada um dos blocos flutuantes, para que assim o mário não
-                    consiga atravessá-los se pular por baixo deles: </p>
-                <img src="assets/img/img26.png" alt="">
-
-                <p>Adicione o código no ator do Mário:</p>
-                <img src="assets/img/img27.png" alt="">
-
-                <p>22º: Por último iremos adicionar o código para animar a moeda: </p>
-                <img src="assets/img/img28.png" alt="">
-            </div>
-
-            <div class="tutorial">
-                <p>Agora o jogo está quase finalizado, mas falta uma coisa, será que você percebeu?
-                    <br>O mário ainda não está morrendo ao tocar no Goomba, mas que tal você tentar fazer sozinho(a)
-                    agora?
-                    Com o que já aprendemos até aqui tenho certeza que você consegue!
-                </p>
-                <p>Agora você pode praticar bastante, adicionar outros atores ao jogo, outros cenários, use a usa
-                    imaginação!
-                </p>
-                <p>O desenvolvimento de jogos é muito valorizado e além de um hobby você pode fazer disso sua
-                    profissão no futuro, mas tem que praticar hein! Espero que tenha gostado e obrigada por acompanhar
-                    até aqui!</p>
             </div>
         </article>
     </main>
