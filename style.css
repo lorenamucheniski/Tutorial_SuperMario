@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 16px;
 }
 
 body {
@@ -19,29 +20,46 @@ body {
     height: 100vh;
 }
 
+.nav-sup {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 2em;
+    display: none;
+}
+
+.nav-sup
+ ul {
+    list-style: none;
+    font-size: .8em;
+    padding: .4em 20em;
+}
+
 header {
     background-color: var(--vermelho);
     box-shadow: 1px 1px 1px;
     padding: .6em;
+    font-size: 2em;
     text-align: center;
     font-family: 'Bowlby One SC', sans-serif;
 }
 
-nav {
+.nav-inf {
+    max-width: 56.25em;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: .4em;
-    height: 2em;
 }
 
-nav ul {
+.nav-inf ul {
     list-style: none;
     font-size: .8em;
-    padding: 4px;
+    padding: 1em 1em;
 }
 
 li a {
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
+}
+
+li a:hover {
+    color: white;
 }
 
 /*introdução logo após o header*/
@@ -59,7 +77,8 @@ li a {
 }
 
 .img_top {
-    max-width: 30em;
+    min-width: 10%;
+    max-width: 80%;
     margin: 2em auto 0;
     z-index: 1;
 }
@@ -74,16 +93,19 @@ li a {
 
 .decoracao {
     background-color: var(--azul);
-    height: 5.2em;
+    height: 7em;
     position: relative;
     bottom: 3em;
     z-index: -1;
 }
 
 main {
+    background-color: rgba(12, 12, 235, 0.2);
     margin: 0 auto 0;
-    padding: 0 1em 0;
-    max-width: 55em;
+    max-width: 70em;
+    padding: 1em;
+    position: relative;
+    bottom: 3em;
 }
 
 main p {
@@ -91,12 +113,8 @@ main p {
     font-size: var(--tamanho-padrao-letras);
 }
 
-.artigo {
-    margin: 0 auto 0;
-}
-
 .artigo p {
-    margin: 5px auto 0;
+    margin: 0 auto 0 ;
 }
 
 .artigo h3 {
@@ -137,7 +155,7 @@ main p {
     position: fixed;
     top: 20em;
     left: 30%;
-    transform: scale(1.5,1.5);
+    transform: scale(1.5,);
     transition-duration: 1.5s ;
     z-index: 9999;
 }
@@ -177,10 +195,13 @@ footer .icones_redes {
         max-width: 60em;
     }
 
-    nav {
-        max-width: 50em;
-        margin: 0 auto;
-        border-radius: 0 0 5px 5px;
+    .nav-sup {
+        display: flex;
+        padding: .5em
+    }
+
+    .nav-inf {
+        display: none;
     }
 
     .imagens {
