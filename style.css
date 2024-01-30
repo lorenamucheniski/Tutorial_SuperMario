@@ -136,10 +136,10 @@ main p {
 .img_tela_cheia.tela_cheia {
     position: fixed;
     top: 20em;
-    left: 35%;
-    transform: scale(2,2);
-    z-index: 9999;
+    left: 30%;
+    transform: scale(1.5,1.5);
     transition-duration: 1.5s ;
+    z-index: 9999;
 }
 
 

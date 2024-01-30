@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 16px;
 }
 
 body {
@@ -22,8 +23,10 @@ header {
   background-color: var(--vermelho);
   box-shadow: 1px 1px 1px;
   padding: .6em;
+  margin-top: 1em;
   text-align: center;
   font-family: 'Bowlby One SC', sans-serif;
+  font-size: 2em;
 }
 
 /*introdução logo após o header*/
@@ -83,7 +86,8 @@ main p {
 
 .links_top {
   position: relative;
-  width: 15em;
+  max-width: 30em;
+  min-width: .4em;
   height: 1.5em;
   margin: 2em auto;
   padding: 1em;
@@ -197,10 +201,19 @@ footer ul li {
 
 footer .icones_redes {
   color: transparent;
-
   -webkit-text-stroke: 1px var(--azul);
 }
 
+.imagens img {
+  max-width: 10em;
+  min-width: .5em;
+}
+
+@media screen and (min-width: 350px) {
+  .imagens {
+    display: flex;
+  }
+}
 
 @media screen and (min-width: 900px) {
 
@@ -213,10 +226,8 @@ footer .icones_redes {
   }
 
   .links_top {
-    width: 30em;
     gap: 10em;
     margin: 2.5em auto;
   }
-
 
 }
