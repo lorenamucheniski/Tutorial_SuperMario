@@ -22,15 +22,14 @@ body {
 
 .nav-sup {
     background-color: rgba(0, 0, 0, 0.6);
-    height: 2em;
+    height: 4em;
     display: none;
 }
 
-.nav-sup
- ul {
+.nav-sup ul {
     list-style: none;
     font-size: .8em;
-    padding: .4em 20em;
+    padding: .4em 10em;
 }
 
 header {
@@ -66,14 +65,14 @@ li a:hover {
 .primeiro_paragrafo {
     color: rgba(0, 0, 0, 0.808);
     text-align: center;
-    font-size: 1em;
     padding: .2em;
-    margin-top: 1em;
+    font-style: oblique;
+    font-weight: bold;
 }
 
-.autor {
-    font-size: .7em;
-    margin-top: .5em;
+.autor, .primeiro_paragrafo {
+    font-size: .8rem;
+    margin-top: 1em;
 }
 
 .img_top {
@@ -100,12 +99,12 @@ li a:hover {
 }
 
 main {
-    background-color: rgba(12, 12, 235, 0.2);
     margin: 0 auto 0;
     max-width: 70em;
     padding: 1em;
     position: relative;
     bottom: 3em;
+
 }
 
 main p {
@@ -113,99 +112,102 @@ main p {
     font-size: var(--tamanho-padrao-letras);
 }
 
-.artigo p {
-    margin: 0 auto 0 ;
-}
-
 .artigo h3 {
+    width: 100%;
     text-align: center;
     color: white;
     background-color: var(--azul);
     border-radius: 0 15px 0;
     margin: 2em auto 0;
-    padding: 3px;
+    padding: .9em;
 }
 
-.tutorial {
-    width: 100%;
-    margin: 1em auto 0;
+.artigo {
+    max-width: 100%;
+    margin: 1em 1em ;
+    display: flex;
+    flex-direction: column;
 }
 
-.tutorial p {
+.artigo p {
+    margin: 0 auto 0;
     text-align: justify;
     line-height: 1.5em;
     margin-bottom: 1em;
 }
 
-.tutorial img {
+.tutorial_img {
+    outline: 1px solid red;
+    min-width: 10em;
+    max-width: 30em;
+    align-self: center;
+}
+
+.tutorial_img img {
     display: block;
-    max-width: 18em;
+    width: 70%;
     margin: 0 auto 1em;
     border-radius: 10px;
     border: 1px solid var(--vermelho);
     box-shadow: 2px 3px 3px 1px;
 }
 
-.imagem-tela-cheia {
-    cursor: pointer;
-    /* Adiciona uma transição suave para o efeito de escala */
+.imagens {
+    min-width: 10em;
+    max-width: 50em;
+    align-self: center;
+    outline: 1px solid red;
+    align-items: flex-end;
 }
 
-.img_tela_cheia.tela_cheia {
-    position: fixed;
-    top: 20em;
-    left: 30%;
-    transform: scale(1.5,);
-    transition-duration: 1.5s ;
-    z-index: 9999;
+.imagens img {
+    width: 35%;
 }
-
 
 footer {
     background-color: rgba(241, 241, 241, 0.5);
-    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 3em;
 }
 
 footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5em;
-    font-size: 2em;
+    gap: 3em;
 }
 
-footer ul li {
-    box-shadow: 0 15px 15px 1px rgba(0, 0, 0, 0.2);
-    padding: 0 3px;
-    border-radius: 3px;
-}
 
-footer .icones_redes {
+.icones_redes {
+    width: 100%;
     color: transparent;
-
     -webkit-text-stroke: 1px var(--azul);
+    box-shadow: 0 0 .2em var(--azul);
+    
 }
 
 @media screen and (min-width: 900px) {
-
-    .tutorial p {
-        max-width: 60em;
+    
+    
+    main {
+        border-left: .1em solid rgba(0, 0, 0, 0.4);
+        border-right: .1em solid rgba(0, 0, 0, 0.4);
     }
-
+    
     .nav-sup {
         display: flex;
-        padding: .5em
+        align-items: center ;
     }
-
+    
     .nav-inf {
         display: none;
     }
-
+    
     .imagens {
         display: flex;
+        justify-content: space-between;
     }
-
+    
 }
