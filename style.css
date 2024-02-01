@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     font-size: 16px;
 }
 
@@ -68,11 +69,17 @@ li a:hover {
     padding: .2em;
     font-style: oblique;
     font-weight: bold;
-}
-
-.autor, .primeiro_paragrafo {
     font-size: .8rem;
     margin-top: 1em;
+}
+
+.primeiro_paragrafo p:nth-of-type(2){
+    font-size: 0.7rem;
+    margin-top: 1em;
+}
+
+.primeiro_paragrafo2 {
+    display: none;
 }
 
 .img_top {
@@ -130,24 +137,23 @@ main p {
 }
 
 .artigo p {
-    margin: 0 auto 0;
+    margin: 2em auto 0;
     text-align: justify;
     line-height: 1.5em;
     margin-bottom: 1em;
 }
 
 .tutorial_img {
-    outline: 1px solid red;
-    min-width: 10em;
-    max-width: 30em;
+    min-width: 1%;
+    max-width: 100%;
     align-self: center;
 }
 
 .tutorial_img img {
     display: block;
-    width: 70%;
+    width: 100%;
     margin: 0 auto 1em;
-    border-radius: 10px;
+    border-radius: 1em;
     border: 1px solid var(--vermelho);
     box-shadow: 2px 3px 3px 1px;
 }
@@ -156,12 +162,16 @@ main p {
     min-width: 10em;
     max-width: 50em;
     align-self: center;
-    outline: 1px solid red;
-    align-items: flex-end;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
 }
 
 .imagens img {
-    width: 35%;
+    width: 60%;
+    border-radius: 1em;
 }
 
 footer {
@@ -206,8 +216,41 @@ footer ul {
     }
     
     .imagens {
-        display: flex;
         justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    
+    .primeiro_paragrafo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-weight: bold;
+    }
+
+    .primeiro_paragrafo2 p {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .primeiro_paragrafo2 p:nth-of-type(2) {
+        font-size: 1em;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .primeiro_paragrafo {
+        display: none;
+    }
+
+    .artigo p {
+        font-weight: 600;
+    }
+
+    header { 
+        font-size: 3em;
     }
     
 }
