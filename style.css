@@ -23,14 +23,14 @@ body {
 
 .nav-sup {
     background-color: rgba(0, 0, 0, 0.6);
-    height: 4em;
+    padding: 1em;
     display: none;
 }
 
-.nav-sup ul {
+.nav-sup ul {       
+    text-align: center;
     list-style: none;
     font-size: .8em;
-    padding: .4em 10em;
 }
 
 header {
@@ -45,6 +45,8 @@ header {
 .nav-inf {
     max-width: 56.25em;
     background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
 }
 
 .nav-inf ul {
@@ -154,7 +156,6 @@ main p {
     width: 100%;
     margin: 0 auto 1em;
     border-radius: 1em;
-    border: 1px solid var(--vermelho);
     box-shadow: 2px 3px 3px 1px;
 }
 
@@ -190,13 +191,17 @@ footer ul {
 }
 
 
-.icones_redes {
-    width: 100%;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--azul);
-    box-shadow: 0 0 .2em var(--azul);
+.icones_redes a {
+    display: flex;
     
 }
+
+.icones_redes i {
+    color: var(--azul);
+    font-size: 2em;
+    text-shadow: 2px 0 rgba(0, 0, 0, 0.226);
+}
+
 
 @media screen and (min-width: 900px) {
     
@@ -208,7 +213,7 @@ footer ul {
     
     .nav-sup {
         display: flex;
-        align-items: center ;
+        justify-content: center;
     }
     
     .nav-inf {
@@ -226,8 +231,8 @@ footer ul {
         flex-direction: column;
         align-items: center;
         gap: 1em;
-        color: white;
-        text-shadow: 2px 2px 2px black;
+        color: black;
+        text-shadow: 1px 1px 1px white;
         font-weight: bold;
     }
 
@@ -238,7 +243,6 @@ footer ul {
 
     .primeiro_paragrafo2 p:nth-of-type(2) {
         font-size: 1em;
-        text-shadow: 1px 1px 1px black;
     }
 
     .primeiro_paragrafo {
@@ -251,6 +255,10 @@ footer ul {
 
     header { 
         font-size: 3em;
+    }
+
+    .img_top img {
+        margin-top: 1.5em;
     }
     
 }
