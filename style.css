@@ -199,17 +199,12 @@ footer ul {
 .icones_redes i {
     color: var(--azul);
     font-size: 2em;
-    text-shadow: 2px 0 rgba(0, 0, 0, 0.226);
+    text-shadow: 2 2px 0 rgba(0, 0, 0, 0.226);
 }
 
 
 @media screen and (min-width: 900px) {
     
-    
-    main {
-        border-left: .1em solid rgba(0, 0, 0, 0.4);
-        border-right: .1em solid rgba(0, 0, 0, 0.4);
-    }
     
     .nav-sup {
         display: flex;
@@ -219,11 +214,18 @@ footer ul {
     .nav-inf {
         display: none;
     }
+
+    header { 
+        font-size: 3em;
+    }
+
+    .img_top img {
+        margin-top: 1.5em;
+    }
     
-    .imagens {
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-direction: row;
+    main {
+        border-left: .1em solid rgba(0, 0, 0, 0.4);
+        border-right: .1em solid rgba(0, 0, 0, 0.4);
     }
     
     .primeiro_paragrafo2 {
@@ -249,16 +251,15 @@ footer ul {
         display: none;
     }
 
+    .imagens {
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    
+
     .artigo p {
         font-weight: 600;
     }
 
-    header { 
-        font-size: 3em;
-    }
-
-    .img_top img {
-        margin-top: 1.5em;
-    }
-    
 }
